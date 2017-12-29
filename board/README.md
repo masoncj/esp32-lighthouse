@@ -60,11 +60,13 @@ I then moved to my usual PCB layout tool, [DipTrace](https://www.diptrace.com/).
 Note, the TS4231 is essentially a very high gain amplifier for a specific carrier frequency.  The [design guidelines](https://www.triadsemi.com/download/18126) are very insistent that it's important to minimize noise and stray capacitance.  We use a crosshatched ground (to minimize capacitance), short/matched traces (to minimize differential noise), and try to follow closely the layout on page 4.  However, I used 0603 caps instead of 0402.  I figured that one extremely fiddly part per board was enough.
 
 Schematic ([PDF](outputs/esp32-lighthouse-9dof-single-v1-schem.pdf)):
-![Schematic](outputs/esp32-lighthouse-9dof-single-v1-schem.png)
+
+<img alt='Schematic' src='outputs/esp32-lighthouse-9dof-single-v1-schem.png' height="400px"/>
 
 
-Board Layout ([PDF](outputs/esp32-lighthouse-9dof-single-v1-board.pdf))
-![Board Layout](outputs/esp32-lighthouse-9dof-single-v1-white.png)
+Board Layout ([PDF](outputs/esp32-lighthouse-9dof-single-v1-board.pdf)):
+
+<img src='outputs/esp32-lighthouse-9dof-single-v1-white.png' height='400px' alt='Board Layout'/>
 
 [Gerbers](outputs/esp32-lighthouse-9dof-single-v1)
 
