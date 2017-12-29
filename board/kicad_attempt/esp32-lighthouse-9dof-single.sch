@@ -1,0 +1,456 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:lighthouse
+LIBS:esp32-lighthouse-9dof-single-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BPW34S U3
+U 1 1 5A2DF031
+P 6100 700
+F 0 "U3" H 5850 850 60  0000 C CNN
+F 1 "BPW34S" H 6100 700 60  0000 C CNN
+F 2 "lighthouse:BPW34S" H 6100 700 60  0001 C CNN
+F 3 "" H 6100 700 60  0001 C CNN
+	1    6100 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LSM9DS1 U2
+U 1 1 5A2DF0A9
+P 5450 4100
+F 0 "U2" H 4850 4650 60  0000 C CNN
+F 1 "LSM9DS1" H 5450 4100 60  0000 C CNN
+F 2 "lighthouse:LSM9DS1" H 5450 4100 60  0001 C CNN
+F 3 "" H 5450 4100 60  0001 C CNN
+	1    5450 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L ESP32-L U4
+U 1 1 5A35BBE3
+P 3450 3100
+F 0 "U4" H 3200 3800 60  0000 C CNN
+F 1 "ESP32-L" H 3400 3700 60  0000 C CNN
+F 2 "lighthouse:ESP32-L" H 3400 3700 60  0001 C CNN
+F 3 "" H 3400 3700 60  0001 C CNN
+	1    3450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TS4231 U1
+U 1 1 5A35BE10
+P 5400 1500
+F 0 "U1" H 5000 1900 60  0000 C CNN
+F 1 "TS4231" H 5400 1450 60  0000 C CNN
+F 2 "lighthouse:TS4231" H 5400 1450 60  0001 C CNN
+F 3 "" H 5400 1450 60  0001 C CNN
+	1    5400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5A35BFCA
+P 4400 1250
+F 0 "C2" H 4410 1320 50  0000 L CNN
+F 1 "1u" H 4410 1170 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4400 1250 60  0001 C CNN
+F 3 "" H 4400 1250 60  0000 C CNN
+	1    4400 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR01
+U 1 1 5A35C0D1
+P 4200 1250
+F 0 "#PWR01" H 4200 1000 50  0001 C CNN
+F 1 "Earth" H 4200 1100 50  0001 C CNN
+F 2 "" H 4200 1250 60  0000 C CNN
+F 3 "" H 4200 1250 60  0000 C CNN
+	1    4200 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L ESP32-R U5
+U 1 1 5A35C297
+P 7750 3000
+F 0 "U5" H 7700 3750 60  0000 C CNN
+F 1 "ESP32-R" H 7850 3650 60  0000 C CNN
+F 2 "lighthouse:ESP32-R" H 7850 3650 60  0001 C CNN
+F 3 "" H 7850 3650 60  0001 C CNN
+	1    7750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 5A35C2FF
+P 7100 3450
+F 0 "#PWR02" H 7100 3300 50  0001 C CNN
+F 1 "+3.3V" H 7100 3590 50  0000 C CNN
+F 2 "" H 7100 3450 60  0000 C CNN
+F 3 "" H 7100 3450 60  0000 C CNN
+	1    7100 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 5A35C3CD
+P 6250 1750
+F 0 "#PWR03" H 6250 1600 50  0001 C CNN
+F 1 "+3.3V" H 6250 1890 50  0000 C CNN
+F 2 "" H 6250 1750 60  0000 C CNN
+F 3 "" H 6250 1750 60  0000 C CNN
+	1    6250 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 5A35C3F9
+P 6250 1950
+F 0 "C1" H 6260 2020 50  0000 L CNN
+F 1 "0.1u" H 6260 1870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6250 1950 60  0001 C CNN
+F 3 "" H 6250 1950 60  0000 C CNN
+	1    6250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR04
+U 1 1 5A35C4DE
+P 6250 2150
+F 0 "#PWR04" H 6250 1900 50  0001 C CNN
+F 1 "Earth" H 6250 2000 50  0001 C CNN
+F 2 "" H 6250 2150 60  0000 C CNN
+F 3 "" H 6250 2150 60  0000 C CNN
+	1    6250 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR05
+U 1 1 5A35C54D
+P 6350 1500
+F 0 "#PWR05" H 6350 1250 50  0001 C CNN
+F 1 "Earth" H 6350 1350 50  0001 C CNN
+F 2 "" H 6350 1500 60  0000 C CNN
+F 3 "" H 6350 1500 60  0000 C CNN
+	1    6350 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5A35C6FD
+P 4450 1500
+F 0 "R1" H 4480 1520 50  0000 L CNN
+F 1 "15k" H 4480 1460 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 4450 1500 60  0001 C CNN
+F 3 "" H 4450 1500 60  0000 C CNN
+	1    4450 1500
+	0    1    1    0   
+$EndComp
+NoConn ~ 7400 2650
+NoConn ~ 7400 2950
+$Comp
+L Earth #PWR06
+U 1 1 5A371759
+P 4500 4800
+F 0 "#PWR06" H 4500 4550 50  0001 C CNN
+F 1 "Earth" H 4500 4650 50  0001 C CNN
+F 2 "" H 4500 4800 60  0000 C CNN
+F 3 "" H 4500 4800 60  0000 C CNN
+	1    4500 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3850 3200
+$Comp
+L C_Small C4
+U 1 1 5A371D96
+P 7300 4150
+F 0 "C4" H 7310 4220 50  0000 L CNN
+F 1 "100n" H 7310 4070 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7300 4150 60  0001 C CNN
+F 3 "" H 7300 4150 60  0000 C CNN
+	1    7300 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3450 7400 4350
+Connection ~ 7100 4150
+Wire Wire Line
+	7100 4800 5800 4800
+Connection ~ 7100 3400
+Wire Wire Line
+	7100 3350 7100 4800
+Wire Wire Line
+	6300 4150 7200 4150
+Wire Wire Line
+	7400 3350 7100 3350
+Wire Wire Line
+	6500 3250 7400 3250
+Wire Wire Line
+	6500 4250 6500 3250
+Wire Wire Line
+	6300 4250 6500 4250
+Wire Wire Line
+	6400 3150 7400 3150
+Wire Wire Line
+	6400 4050 6400 3150
+Wire Wire Line
+	6300 4050 6400 4050
+Wire Wire Line
+	6300 3050 6300 3950
+Wire Wire Line
+	7400 3050 6300 3050
+Wire Wire Line
+	5800 2850 5800 3350
+Wire Wire Line
+	7400 2850 5800 2850
+Wire Wire Line
+	5700 2750 7400 2750
+Wire Wire Line
+	5700 3350 5700 2750
+Connection ~ 4500 4050
+Wire Wire Line
+	4600 4050 4500 4050
+Connection ~ 5100 4800
+Connection ~ 5200 4800
+Wire Wire Line
+	4500 4800 5300 4800
+Connection ~ 4500 4150
+Wire Wire Line
+	4500 4150 4600 4150
+Connection ~ 4500 4250
+Wire Wire Line
+	4500 4250 4600 4250
+Wire Wire Line
+	4500 3950 4500 4800
+Wire Wire Line
+	4600 3950 4500 3950
+Wire Wire Line
+	5600 2550 7400 2550
+Wire Wire Line
+	5600 2550 5600 3350
+Wire Wire Line
+	5500 2450 7400 2450
+Wire Wire Line
+	5500 2450 5500 3350
+Wire Wire Line
+	5400 2800 5400 3350
+Wire Wire Line
+	3850 2800 5400 2800
+Wire Wire Line
+	5300 2900 3850 2900
+Wire Wire Line
+	5300 3350 5300 2900
+Wire Wire Line
+	5200 3000 5200 3350
+Wire Wire Line
+	3850 3000 5200 3000
+Wire Wire Line
+	5100 3100 3850 3100
+Wire Wire Line
+	5100 3350 5100 3100
+Wire Wire Line
+	4150 2700 3850 2700
+Wire Wire Line
+	4150 2050 4150 2700
+Wire Wire Line
+	5400 2050 4150 2050
+Wire Wire Line
+	4050 2600 3850 2600
+Wire Wire Line
+	4050 1750 4050 2600
+Wire Wire Line
+	4750 1750 4050 1750
+Connection ~ 4250 1250
+Wire Wire Line
+	4250 1500 4250 1250
+Wire Wire Line
+	4350 1500 4250 1500
+Wire Wire Line
+	4550 1500 4750 1500
+Wire Wire Line
+	6250 2050 6250 2150
+Wire Wire Line
+	6250 1750 6250 1850
+Wire Wire Line
+	6100 1750 6250 1750
+Connection ~ 6250 1500
+Wire Wire Line
+	6250 1600 6100 1600
+Wire Wire Line
+	6250 1500 6350 1500
+Wire Wire Line
+	6250 1400 6250 1600
+Wire Wire Line
+	6100 1400 6250 1400
+Wire Wire Line
+	4500 1250 4750 1250
+Wire Wire Line
+	4200 1250 4300 1250
+Wire Wire Line
+	5400 800  5400 950 
+Wire Wire Line
+	6700 1250 6700 800 
+Wire Wire Line
+	6100 1250 6700 1250
+Wire Wire Line
+	5400 800  5600 800 
+$Comp
+L C_Small C5
+U 1 1 5A3725F1
+P 5550 5600
+F 0 "C5" H 5560 5670 50  0000 L CNN
+F 1 "100n" H 5560 5520 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5550 5600 60  0001 C CNN
+F 3 "" H 5550 5600 60  0000 C CNN
+	1    5550 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 5A372646
+P 5800 5600
+F 0 "C6" H 5810 5670 50  0000 L CNN
+F 1 "10u" H 5810 5520 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5800 5600 60  0001 C CNN
+F 3 "" H 5800 5600 60  0000 C CNN
+	1    5800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5A3726A0
+P 5800 4900
+F 0 "C3" H 5810 4970 50  0000 L CNN
+F 1 "100n" H 5810 4820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5800 4900 60  0001 C CNN
+F 3 "" H 5800 4900 60  0000 C CNN
+	1    5800 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 4800 5400 5100
+Wire Wire Line
+	4850 5100 4850 4800
+Connection ~ 4850 4800
+Wire Wire Line
+	5500 4800 5500 5400
+Wire Wire Line
+	5500 5400 6400 5400
+Connection ~ 5550 5400
+Wire Wire Line
+	6400 5400 6400 4800
+Connection ~ 6400 4800
+Connection ~ 5800 5400
+Wire Wire Line
+	5600 4800 5600 5400
+Connection ~ 5600 5400
+$Comp
+L C_Small C7
+U 1 1 5A372C70
+P 5150 5100
+F 0 "C7" H 5160 5170 50  0000 L CNN
+F 1 "10n (16V)" H 5160 5020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5150 5100 60  0001 C CNN
+F 3 "" H 5150 5100 60  0000 C CNN
+	1    5150 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 4900 5700 4800
+$Comp
+L Earth #PWR07
+U 1 1 5A372F61
+P 6050 5000
+F 0 "#PWR07" H 6050 4750 50  0001 C CNN
+F 1 "Earth" H 6050 4850 50  0001 C CNN
+F 2 "" H 6050 5000 60  0000 C CNN
+F 3 "" H 6050 5000 60  0000 C CNN
+	1    6050 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4900 6050 4900
+Wire Wire Line
+	6050 4900 6050 5000
+NoConn ~ 3850 3300
+NoConn ~ 3850 3400
+$Comp
+L Earth #PWR08
+U 1 1 5A373A0C
+P 5700 5850
+F 0 "#PWR08" H 5700 5600 50  0001 C CNN
+F 1 "Earth" H 5700 5700 50  0001 C CNN
+F 2 "" H 5700 5850 60  0000 C CNN
+F 3 "" H 5700 5850 60  0000 C CNN
+	1    5700 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5700 5550 5850
+Wire Wire Line
+	5550 5850 5800 5850
+Wire Wire Line
+	5800 5850 5800 5700
+Connection ~ 5700 5850
+Wire Wire Line
+	5550 5400 5550 5500
+Wire Wire Line
+	5800 5400 5800 5500
+Wire Wire Line
+	4850 5100 5050 5100
+Wire Wire Line
+	5400 5100 5250 5100
+$Comp
+L Earth #PWR?
+U 1 1 5A402473
+P 7400 4350
+F 0 "#PWR?" H 7400 4100 50  0001 C CNN
+F 1 "Earth" H 7400 4200 50  0001 C CNN
+F 2 "" H 7400 4350 60  0000 C CNN
+F 3 "" H 7400 4350 60  0000 C CNN
+	1    7400 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 4150
+$EndSCHEMATC

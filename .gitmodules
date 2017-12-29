@@ -1,0 +1,3 @@
+[submodule "vive-diy-position-sensor"]
+	path = vive-diy-position-sensor
+	url = https://github.com/ashtuchkin/vive-diy-position-sensor

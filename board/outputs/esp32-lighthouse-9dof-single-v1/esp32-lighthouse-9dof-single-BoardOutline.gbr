@@ -1,0 +1,21 @@
+G04 DipTrace 3.0.0.2*
+G04 esp32-lighthouse-9dof-single-BoardOutline.gbr*
+%MOIN*%
+G04 #@! TF.FileFunction,Profile*
+G04 #@! TF.Part,Single*
+%ADD11C,0.005512*%
+%FSLAX26Y26*%
+G04*
+G70*
+G90*
+G75*
+G01*
+G04 BoardOutline*
+%LPD*%
+X-500000Y650000D2*
+D11*
+Y-450000D1*
+X500000D1*
+Y650000D1*
+X-500000D1*
+M02*
