@@ -9,9 +9,9 @@ There will eventually be multiple boards here, but currently only the first exis
 * **[Castellated Module](#castellated_module)**, `esp32-lighthouse-proto-mod`: uses the TS3633 prototyping module ([datasheet](https://www.triadsemi.com/wp-content/uploads/dlm_uploads/2016/09/TS3633-CM1_Datasheet-Rev-B.pdf)), for easier soldering, but more expensive.
 
 
-<a name='esp-32-lighthouse-9dof-single'>
+<a name='esp-32-lighthouse-9dof-single'></a>
 ## Single Chip TS4231 Board
-</a>
+
 
 Uses TS4231 WSCLP (read: tiny) chip.  Also includes 9 degree-of-freedom (9DOF) inertia measurement unit (IMU), which contains a 3-axis accelerometer, gyroscope, and magnetometer (compass). With these components it should be able to get absolute position and orientation.
 
@@ -70,9 +70,9 @@ Board Layout ([PDF](outputs/esp32-lighthouse-9dof-single-v1-board.pdf)):
 
 [Gerbers](outputs/esp32-lighthouse-9dof-single-v1)
 
-<a name='castellated_module'>
+<a name='castellated_module'></a>
 ## Castellated Module
-</a>
+
 
 This was an earlier attempt at using a prototyping module before I realized how much it would cost.
 
